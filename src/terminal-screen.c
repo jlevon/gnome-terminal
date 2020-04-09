@@ -1791,8 +1791,7 @@ terminal_screen_button_press (GtkWidget      *widget,
   terminal_screen_check_extra (screen, (GdkEvent*)event, &number_info);
 
   if (hyperlink != NULL &&
-      (event->button == 1 || event->button == 2) &&
-      (state & GDK_CONTROL_MASK))
+      (event->button == 1 || event->button == 2))
     {
       gboolean handled = FALSE;
 
